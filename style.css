@@ -128,9 +128,9 @@ a:hover{
 /*sections*/
 
 section{
-    padding-top: 4vh;
-    height: 96vh;
-    margin:0 10rem;
+    padding-top: 1vh;
+    height: 86vh;
+    margin:0 8rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -147,7 +147,7 @@ section{
 
 .section_pic-container {
     display: flex;
-    height: 350px; 
+    height: 400px; 
     width: 500px; 
     margin: auto 0;
 }
@@ -169,6 +169,10 @@ section{
 .section_text_p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+}
+
+.text-container{
+    justify-content: center;
 }
 
 .title{
@@ -214,7 +218,7 @@ section{
     cursor: pointer;
 }
 
-.btn-color-1, .btn-color-2:hover{
+.btn-color-1:hover, .btn-color-2:hover{
     background:black;
     color: white;
 }
@@ -228,7 +232,7 @@ section{
 }
 
 .btn-color-2:hover{
-    border:rgb(255,255,255) 0.1rem solid;
+    border:white 0.1rem solid;
 }
 
 .btn-container{
@@ -270,6 +274,9 @@ section{
     text-align: center;
 }
 
+.text-container{
+    text-align:center;
+}
 .section-container{
     gap:4rem;
     width:500px;
@@ -297,6 +304,7 @@ section{
 /* techstack */
 #techstack{
     position:relative;
+    
 }
 
 .techstack-sub-title{
@@ -338,7 +346,6 @@ article.icon{
     display:flex;
     justify-content:center;
     flex-direction:column;
-    height: 70vh;
 }
 
 .contact-info-header-container{
@@ -372,7 +379,7 @@ article.icon{
 /*footer*/
 
 footer{
-    height:26vh;
+    height:20vh;
     margin:0 1rem;
 }
 
