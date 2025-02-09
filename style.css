@@ -143,8 +143,25 @@ section{
 
 #profile{
     display:flex;
+    position:relative;
+    height: 100vh;
+    overflow:hidden;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color:black;
+    padding-left: 0rem;
 }
-
+#profile spline-viewer {
+    position: absolute; /* Position the Spline viewer absolutely */
+    top: 0;
+    right:55px;
+    left: auto;
+    width: 60%;
+    height: 100%;
+    z-index: -1; /* Place the Spline viewer behind other content */
+    border: none; /* Remove border */
+}
 .section_pic-container {
     display: flex;
     height: 400px; 
@@ -241,10 +258,31 @@ section{
 
 /*About*/
 
-#about{
-    position:relative;
+#about {
+    position: relative;
+    padding: 2rem;
+    overflow: hidden;
+    color: rgb(53, 53, 53); 
+    min-height: 100vh; 
+    background: rgba(255, 255, 255, 0.5); 
 }
-
+#about spline-viewer {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    border: none; 
+}
+#about .title {
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem; 
+    color: rgb(53, 53, 53); 
+}
 .about-containers{
     gap:2rem;
     margin-bottom: 1rem;
@@ -368,12 +406,11 @@ article.icon{
 }
 
 .contact-info-container p{
-    font-size: larger;
+    font-size: large;
 }
 
 .contact-icon{
     cursor:default;
-    height:2.5rem;
 }
 
 /*footer*/
