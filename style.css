@@ -1,6 +1,5 @@
 /* Styling*/
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
@@ -265,6 +264,7 @@ section{
     color: rgb(53, 53, 53); 
     min-height: 100vh; 
     background: rgba(255, 255, 255, 0.5); 
+    height:10vh;
 }
 #about spline-viewer {
     position: absolute; 
@@ -341,7 +341,7 @@ section{
 
 .color-container{
     border-color:rgb(163,163,163);
-    background: rgb(250,250,250);
+    background: white;
 }
 
 .project-img{
@@ -357,12 +357,12 @@ section{
 
 .project-btn{
     color:black;
-    border-color:rgb(163,163,163);
+    border-color:black;
 }
+
 /* techstack */
 #techstack{
     position:relative;
-    
 }
 
 .techstack-sub-title{
@@ -404,6 +404,7 @@ article.icon{
     display:flex;
     justify-content:center;
     flex-direction:column;
+    height:15vh;
 }
 
 .contact-info-header-container{
@@ -411,8 +412,8 @@ article.icon{
     justify-content:center;
     border-radius: 2rem;
     border:rgb(53,53,53);
-    border-color:rgb(163,163,163);
-    background:rgb(250,250,250);
+    border-color:black;
+    background:white;
     margin:2rem auto;
     padding:0.5rem;
 }
@@ -423,6 +424,7 @@ article.icon{
     justify-content: center;
     gap: 0.5rem;
     margin:1rem;
+    border-radius:2rem;
 }
 
 .contact-info-container p{
