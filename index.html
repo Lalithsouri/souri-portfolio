@@ -8,6 +8,7 @@
     <link rel=" stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_down" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <nav id= "desktop-nav">
@@ -23,28 +24,21 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo"> Souri</div>
+        <div class="logo">Souri</div>
         <div class="hamburger-menu">
-            <div class="hamburger-icon"onclick="toggleMenu()">
-                <span class="material-symbols-outlined">
-                    Menu
-                    </span>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
         </div>
-        <div class ="menu-links">
-            <li><a href ="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href ="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href ="#techstack" onclick="toggleMenu()">Tech Stack</a></li>
-            <li><a href ="#contact" onclick="toggleMenu()">Contact </a></li>
-        </div>
+        <ul class="menu-links"> <!-- Changed from div to ul for semantic correctness -->
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#techstack" onclick="toggleMenu()">Tech Stack</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
     </nav>
    
     <section id="profile">
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.63/build/spline-viewer.js"></script>
-    <spline-viewer 
-        url="https://prod.spline.design/EIneWxxMYTOxN4Pp/scene.splinecode"
-        style="position: absolute; top: 0; right:55px; left: auto; width: 50%; height: 100%; border: none; z-index: -1;">
-    </spline-viewer>
-
         <div class="section_pic-container">
             <img src="assets/Souri.jpeg" alt="Souri's profile picture"/>
         </div>
